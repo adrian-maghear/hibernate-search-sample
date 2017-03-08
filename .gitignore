@@ -1,3 +1,5 @@
-target
-.idea
+*/target/*
+.idea/*
 *.iml
+app/com.adrian.maghear.samples.model.Address/*
+app/com.adrian.maghear.samples.model.Customer/*

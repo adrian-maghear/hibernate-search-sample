@@ -1,18 +1,17 @@
-package hello;
+package com.adrian.maghear.samples.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
-public class PersonDetails {
+public class OrderItem {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
-    private Date birthday;
+    private String description;
 
 }

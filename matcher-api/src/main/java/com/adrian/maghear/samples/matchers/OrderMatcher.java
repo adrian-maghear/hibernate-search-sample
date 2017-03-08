@@ -1,6 +1,6 @@
-package hello.matchers;
+package com.adrian.maghear.samples.matchers;
 
-import hello.Order;
+import com.adrian.maghear.samples.model.Order;
 
 import java.util.List;
 

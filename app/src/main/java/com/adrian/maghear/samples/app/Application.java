@@ -1,15 +1,24 @@
-package hello;
+package com.adrian.maghear.samples.app;
 
-import hello.matchers.CustomerMatcher;
+import com.adrian.maghear.samples.model.Address;
+import com.adrian.maghear.samples.model.Customer;
+import com.adrian.maghear.samples.repository.CustomerRepository;
+import com.adrian.maghear.samples.matchers.CustomerMatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EntityScan(basePackages = "com.adrian.maghear.samples.model")
+@ComponentScan(basePackages = { "com.adrian.maghear.samples.matchers" })
+@EnableJpaRepositories(basePackages = "com.adrian.maghear.samples.repository")
 public class Application {
 
 	private static final Logger log = LoggerFactory.getLogger(Application.class);

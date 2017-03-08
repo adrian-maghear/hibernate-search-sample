@@ -1,4 +1,4 @@
-package hello;
+package com.adrian.maghear.samples.model;
 
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory;

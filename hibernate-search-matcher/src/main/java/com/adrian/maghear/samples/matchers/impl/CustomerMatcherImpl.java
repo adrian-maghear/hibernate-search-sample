@@ -1,7 +1,7 @@
-package hello.matchers.impl;
+package com.adrian.maghear.samples.matchers.impl;
 
-import hello.Customer;
-import hello.matchers.CustomerMatcher;
+import com.adrian.maghear.samples.model.Customer;
+import com.adrian.maghear.samples.matchers.CustomerMatcher;
 import org.apache.lucene.search.Query;
 import org.hibernate.search.jpa.FullTextEntityManager;
 import org.hibernate.search.jpa.Search;
